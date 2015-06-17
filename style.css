@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* reset5 © 2011 opensource.736cs.com MIT */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, summary, time, video {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0; }
+
+body {
+  line-height: 1; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: disc; }
+
+ul ul {
+  list-style: circle; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+ins {
+  text-decoration: underline; }
+
+del {
+  text-decoration: line-through; }
+
+mark {
+  background: none; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input[type=submit], input[type=button], button {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+input, select, a img {
+  vertical-align: middle; }
+
+/* DEFINITIONS */
+html, body {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-family: josefin sans;
+  font-weight: 300;
+  color: #181818; }
+
+a {
+  color: #181818;
+  text-decoration: none; }
+
+h1, h2 {
+  font-weight: 300; }
+
+/* PAGE */
+.wrapper {
+  max-width: 1008px;
+  margin: 0 auto;
+  position: relative; }
+
+/* header */
+.header {
+  text-transform: uppercase;
+  margin: 36px 0 72px 0; }
+
+.logo {
+  text-align: center; }
+
+.logo__text {
+  text-align: center; }
+
+.nav ul {
+  overflow: auto; }
+
+.nav__link {
+  width: 33.3%;
+  float: left;
+  text-align: center; }
+
+.nav__link--first {
+  text-align: left; }
+
+.nav__link--last {
+  text-align: right; }
+
+.nav__link a {
+  padding: 18px; }
+
+.content {
+  clear: both; }
+
+.post {
+  overflow: hidden;
+  margin-bottom: 72px;
+  cursor: pointer; }
+
+.post__title {
+  text-align: center;
+  margin-bottom: 18px; }
+
+.post__media__image {
+  width: 50%;
+  float: left; }
+
+.post__text {
+  position: absolute;
+  visibility: hidden; }
+
+.post__text__col {
+  width: 50%;
+  float: left; }
+
+.post__text__col > * {
+  padding: 0 9px 18px 18px; }
+
+.post__text__col--en {
+  font-style: italic; }
+
+.post__text__col--en > * {
+  padding: 0 18px 18px 9px; }
+
+/* post hover */
+.post:hover {
+  opacity: 0.8; }
+
+.post:hover .post__title {
+  color: #FF4800; }
+
+/* active post */
+.post--active .post__text {
+  visibility: visible; }
+
+.post--active .post__title {
+  color: #FF4800; }
+
+.post--active .post__media {
+  opacity: 0.1; }
